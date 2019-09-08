@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Fable.WebApi.Fetch</PackageId>
+    <Version>0.1.0</Version>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <Authors>Stefan Cullmann</Authors>
+    <Company>Stefan Cullmann</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SCullman/DNN.Fable.Connector</PackageProjectUrl>
+    <PackageTags>Fable WebApi json</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Decode.fs" />
+    <Compile Include="Encode.fs" />
+    <Compile Include="Fetch.fs" />
+  </ItemGroup>
+  <!-- Add source files to "fable" folder in Nuget package -->
+  <ItemGroup>
+    <Content Include="*.fsproj; **\*.fs" PackagePath="fable\" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

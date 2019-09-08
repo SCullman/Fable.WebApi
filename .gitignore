@@ -1,0 +1,8 @@
+packages/
+.vs/
+.ionide/
+obj/
+bin/
+.nuget/
+*.nupkg
+paket-files/
