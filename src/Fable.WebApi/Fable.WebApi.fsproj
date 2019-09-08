@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>JSON Serisalisation for using Fable with WebApi</Description>
+    <PackageTags>fsharp;json;webapi</PackageTags>
+    <Authors>Stefan Cullmann</Authors>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SCullman/Fable.WebApi</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Converters.fs" />
+    <Compile Include="Attribute.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

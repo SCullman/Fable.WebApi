@@ -8,8 +8,8 @@
     <Authors>Stefan Cullmann</Authors>
     <Company>Stefan Cullmann</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/SCullman/DNN.Fable.Connector</PackageProjectUrl>
-    <PackageTags>Fable WebApi json</PackageTags>
+    <PackageProjectUrl>https://github.com/SCullman/Fable.WebApi</PackageProjectUrl>
+    <PackageTags>Fable;WebApi:json</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>

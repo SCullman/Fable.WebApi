@@ -1,0 +1,7 @@
+FSharp.Core
+
+group Framework
+    Newtonsoft.Json  copy_local: false
+    Microsoft.AspNet.WebApi.Core  copy_local: false
+
+    
