@@ -16,7 +16,7 @@ module Encode =
     type Value = obj
 
     [<Emit("Array.from($0)")>]
-    let private arrayFrom(values): Value = jsNative
+    let inline private arrayFrom(values): Value = jsNative
 
     type Encoder<'T> = 'T -> Value
 
@@ -328,9 +328,7 @@ module Encode =
                 // Match string before so it's not considered an IEnumerable
                 | :? string -> value
                 | :? System.Collections.IEnumerable ->
-                    if (value.GetType().IsArray)
-                    then value
-                    else arrayFrom(value) |> box
+                    arrayFrom(value) |> box
                 | _ ->
                     if defaultArg forceCamelCase false && Decode.Helpers.isObject value then
                         let replacement = createObj []

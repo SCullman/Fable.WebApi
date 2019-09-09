@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Fable.WebApi.Fetch</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <Authors>Stefan Cullmann</Authors>
     <Company>Stefan Cullmann</Company>

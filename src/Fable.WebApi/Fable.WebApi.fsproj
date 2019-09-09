@@ -4,7 +4,7 @@
     <Description>JSON Serisalisation for using Fable with WebApi</Description>
     <PackageTags>fsharp;json;webapi</PackageTags>
     <Authors>Stefan Cullmann</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>net46</TargetFrameworks>
